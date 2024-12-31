@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN5XaPknTWTxdBcdC3r0_9blSi_8n3rD_2Xg&s" alt="SMIT Logo">
+      <h1>Student Registration Form</h1>
+    </div>
+    <form>
+      <table>
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td><input type="text" id="firstName" placeholder="Enter First Name"></td>
+        </tr>
+        <tr>
+          <td><label for="lastName">Last Name:</label></td>
+          <td><input type="text" id="lastName" placeholder="Enter Last Name"></td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of Birth:</label></td>
+          <td><input type="date" id="dob"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email ID:</label></td>
+          <td><input type="email" id="email" placeholder="Enter Email Address"></td>
+        </tr>
+        <tr>
+          <td><label for="mobile">Mobile Number:</label></td>
+          <td><input type="text" id="mobile" placeholder="Enter Mobile Number"></td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><textarea id="address" rows="3" placeholder="Enter your address"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="course">Courses Applied For:</label></td>
+          <td>
+            <select id="course">
+              <option>Select a course</option>
+              <option>Web Development</option>
+              <option>App Development</option>
+              <option>Graphic Design</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="profilePic">Upload Your Picture:</label></td>
+          <td><input type="file" id="profilePic"></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
